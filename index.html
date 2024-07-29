@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Simplifié</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -12,37 +12,72 @@
         
         <section id="bitcoin">
             <h2>Qu'est-ce que le Bitcoin ?</h2>
-            <p>Le Bitcoin est une forme de monnaie numérique qui n'est pas contrôlée par une banque ou un gouvernement, mais qui est créée et échangée sur Internet.</p>
+            <p>Le Bitcoin est une forme de monnaie numérique, comme de l'argent électronique. Contrairement à l'argent traditionnel (comme les euros ou les dollars), il n'est pas imprimé par un gouvernement ou une banque centrale. Au lieu de cela, il est créé et échangé sur Internet.</p>
             <div class="qcm">
                 <h3>QCM</h3>
-                <p>Le Bitcoin est-il une monnaie imprimée par une banque ?</p>
-                <button onclick="checkAnswer('bitcoin', false)">Oui</button>
-                <button onclick="checkAnswer('bitcoin', true)">Non</button>
+                <p>Le Bitcoin est-il une forme de monnaie numérique ?</p>
+                <button onclick="checkAnswer('bitcoin', true)">Oui</button>
+                <button onclick="checkAnswer('bitcoin', false)">Non</button>
                 <p id="bitcoin-answer" class="answer"></p>
             </div>
         </section>
 
         <section id="blockchain">
             <h2>Comment fonctionne le Bitcoin ?</h2>
-            <p>Les transactions en Bitcoin sont enregistrées dans un registre public appelé la "blockchain", qui permet de vérifier et de sécuriser les échanges.</p>
+            <p>Imaginons que tu veux envoyer de l'argent à un ami. Avec le Bitcoin, tu peux le faire directement, sans passer par une banque. Pour garantir que tout le monde est d'accord sur qui possède combien de Bitcoin, il y a un registre public appelé la "blockchain". La blockchain est comme un grand livre de comptes où toutes les transactions sont enregistrées et vérifiées.</p>
             <div class="qcm">
                 <h3>QCM</h3>
-                <p>La blockchain est-elle un registre privé ?</p>
-                <button onclick="checkAnswer('blockchain', false)">Oui</button>
-                <button onclick="checkAnswer('blockchain', true)">Non</button>
+                <p>La blockchain est-elle un registre public de transactions Bitcoin ?</p>
+                <button onclick="checkAnswer('blockchain', true)">Oui</button>
+                <button onclick="checkAnswer('blockchain', false)">Non</button>
                 <p id="blockchain-answer" class="answer"></p>
             </div>
         </section>
 
         <section id="minage">
             <h2>Qu'est-ce que le minage de Bitcoin ?</h2>
-            <p>Le minage de Bitcoin consiste à utiliser des ordinateurs pour résoudre des problèmes mathématiques complexes et vérifier les transactions, ajoutant ainsi de nouveaux blocs à la blockchain.</p>
+            <p>Le minage de Bitcoin, c'est un peu comme chercher de l'or, mais avec des ordinateurs. Voici comment ça fonctionne:</p>
+            <ul>
+                <li><strong>Résoudre des énigmes mathématiques</strong>: Les mineurs utilisent des ordinateurs puissants pour résoudre des problèmes mathématiques très complexes. Ces problèmes sont tellement difficiles que seuls des ordinateurs peuvent les résoudre.</li>
+                <li><strong>Vérification des transactions</strong>: Chaque fois que quelqu'un envoie des bitcoins à quelqu'un d'autre, cette transaction est ajoutée à un groupe de transactions appelé "bloc". Les mineurs doivent vérifier que ces transactions sont valides.</li>
+                <li><strong>Ajouter un bloc à la blockchain</strong>: Une fois qu'un mineur a résolu l'énigme, il ajoute le bloc de transactions vérifiées à la blockchain. En retour, le mineur reçoit une récompense en bitcoins. C'est ainsi que de nouveaux bitcoins sont créés.</li>
+            </ul>
             <div class="qcm">
                 <h3>QCM</h3>
-                <p>Le minage de Bitcoin utilise-t-il des puzzles mathématiques simples ?</p>
-                <button onclick="checkAnswer('minage', false)">Oui</button>
-                <button onclick="checkAnswer('minage', true)">Non</button>
+                <p>Les mineurs de Bitcoin résolvent-ils des problèmes mathématiques pour ajouter des blocs à la blockchain ?</p>
+                <button onclick="checkAnswer('minage', true)">Oui</button>
+                <button onclick="checkAnswer('minage', false)">Non</button>
                 <p id="minage-answer" class="answer"></p>
+            </div>
+        </section>
+
+        <section id="village">
+            <h2>Exemple simple</h2>
+            <p>Imaginons un village où tout le monde utilise des cailloux comme monnaie. Chaque fois que quelqu'un donne des cailloux à quelqu'un d'autre, ils doivent inscrire cette transaction sur un grand tableau noir au centre du village.</p>
+            <p>Pour s'assurer que personne ne triche, chaque famille du village envoie quelqu'un pour vérifier les transactions. Ils doivent résoudre un puzzle très difficile (par exemple, trouver un mot caché dans un gros livre) pour avoir le droit d'ajouter les transactions sur le tableau noir. Celui qui trouve le mot en premier peut écrire sur le tableau et reçoit quelques cailloux en récompense.</p>
+            <p>De cette façon, tout le monde peut voir qui possède combien de cailloux, et les transactions sont sécurisées et transparentes.</p>
+            <div class="qcm">
+                <h3>QCM</h3>
+                <p>Dans l'exemple du village, comment les transactions sont-elles vérifiées ?</p>
+                <button onclick="checkAnswer('village', true)">En résolvant des puzzles difficiles</button>
+                <button onclick="checkAnswer('village', false)">En demandant à la banque</button>
+                <p id="village-answer" class="answer"></p>
+            </div>
+        </section>
+
+        <section id="pourquoi">
+            <h2>Pourquoi les gens utilisent-ils le Bitcoin ?</h2>
+            <ul>
+                <li><strong>Liberté</strong>: Tu peux envoyer de l'argent à quelqu'un, n'importe où dans le monde, sans passer par une banque.</li>
+                <li><strong>Sécurité</strong>: Les transactions sont très difficiles à falsifier grâce à la technologie de la blockchain.</li>
+                <li><strong>Anonymat</strong>: Les transactions peuvent être faites de manière anonyme, sans révéler ton identité.</li>
+            </ul>
+            <div class="qcm">
+                <h3>QCM</h3>
+                <p>Le Bitcoin permet-il d'envoyer de l'argent sans passer par une banque ?</p>
+                <button onclick="checkAnswer('pourquoi', true)">Oui</button>
+                <button onclick="checkAnswer('pourquoi', false)">Non</button>
+                <p id="pourquoi-answer" class="answer"></p>
             </div>
         </section>
     </div>
