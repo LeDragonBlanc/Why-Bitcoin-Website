@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Simplifié</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Simplifié</h1>
+        
+        <section id="bitcoin">
+            <h2>Qu'est-ce que le Bitcoin ?</h2>
+            <p>Le Bitcoin est une forme de monnaie numérique qui n'est pas contrôlée par une banque ou un gouvernement, mais qui est créée et échangée sur Internet.</p>
+            <div class="qcm">
+                <h3>QCM</h3>
+                <p>Le Bitcoin est-il une monnaie imprimée par une banque ?</p>
+                <button onclick="checkAnswer('bitcoin', false)">Oui</button>
+                <button onclick="checkAnswer('bitcoin', true)">Non</button>
+                <p id="bitcoin-answer" class="answer"></p>
+            </div>
+        </section>
+
+        <section id="blockchain">
+            <h2>Comment fonctionne le Bitcoin ?</h2>
+            <p>Les transactions en Bitcoin sont enregistrées dans un registre public appelé la "blockchain", qui permet de vérifier et de sécuriser les échanges.</p>
+            <div class="qcm">
+                <h3>QCM</h3>
+                <p>La blockchain est-elle un registre privé ?</p>
+                <button onclick="checkAnswer('blockchain', false)">Oui</button>
+                <button onclick="checkAnswer('blockchain', true)">Non</button>
+                <p id="blockchain-answer" class="answer"></p>
+            </div>
+        </section>
+
+        <section id="minage">
+            <h2>Qu'est-ce que le minage de Bitcoin ?</h2>
+            <p>Le minage de Bitcoin consiste à utiliser des ordinateurs pour résoudre des problèmes mathématiques complexes et vérifier les transactions, ajoutant ainsi de nouveaux blocs à la blockchain.</p>
+            <div class="qcm">
+                <h3>QCM</h3>
+                <p>Le minage de Bitcoin utilise-t-il des puzzles mathématiques simples ?</p>
+                <button onclick="checkAnswer('minage', false)">Oui</button>
+                <button onclick="checkAnswer('minage', true)">Non</button>
+                <p id="minage-answer" class="answer"></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
